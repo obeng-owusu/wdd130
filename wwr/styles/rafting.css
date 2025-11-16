@@ -1,0 +1,205 @@
+/* CSS Variables for consistent theming */
+:root {
+  --primary-color: #2c5530; /* Deep forest green */
+  --secondary-color: #8b4513; /* Saddle brown */
+  --accent1-color: #1a5f7f; /* River blue */
+  --accent2-color: #d4af37; /* Golden yellow */
+  --neutral-light: #f8f9fa; /* Off-white */
+  --neutral-dark: #343a40; /* Dark gray */
+  --heading-font: "Georgia", "Times New Roman", serif;
+  --body-font: "Arial", "Helvetica", sans-serif;
+}
+
+/* Reset CSS box-model properties */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: var(--body-font);
+  color: var(--neutral-dark);
+  background-color: var(--neutral-light);
+  line-height: 1.6;
+}
+
+/* Layout container styles */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--accent2-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--accent1-color);
+}
+
+/* Heading styles */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--accent2-color);
+  padding-bottom: 8px;
+}
+
+/* Content element styles */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  margin: 20px 0;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Hero heading styles */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.9;
+  background-color: var(--accent1-color);
+  color: #fff;
+  margin: 0;
+  font-size: 2.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero article styles */
+.hero article {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background-color: rgba(44, 85, 48, 0.85);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin: 0 0 10px 20px;
+  border: 3px solid var(--accent2-color);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero article p {
+  color: white;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Regular article styles (not in hero) */
+article {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+article img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* History section */
+.history {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 15px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.socialmedia img:hover {
+  transform: scale(1.1);
+}
