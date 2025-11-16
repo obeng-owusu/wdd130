@@ -34,7 +34,7 @@ header, main, footer {
 /* Header styles */
 header {
   background-color: var(--primary-color);
-  color: var(--accent2-color);
+  color: #ffffff; /* FIX: white text instead of gold */
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -54,7 +54,7 @@ nav ul {
 }
 
 nav a {
-  color: var(--accent2-color);
+  color: #ffffff; /* FIX: white text */
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
