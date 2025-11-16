@@ -10,7 +10,7 @@
   --body-font: "Arial", "Helvetica", sans-serif;
 }
 
-/* Universal Selector Reset */
+/* Universal Selector Reset - Explicitly labeled */
 * {
   margin: 0;
   padding: 0;
