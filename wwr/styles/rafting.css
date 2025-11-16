@@ -1,23 +1,29 @@
-/* CSS Variables for consistent theming */
-:root {
-  --primary-color: #2c5530; /* Deep forest green */ 
-  --secondary-color: #8b4513; /* Saddle brown */
-  --accent1-color: #1a5f7f; /* River blue */
-  --accent2-color: #d4af37; /* Golden yellow */
-  --neutral-light: #f8f9fa; /* Off-white */
-  --neutral-dark: #343a40; /* Dark gray */
-  --heading-font: "Georgia", "Times New Roman", serif;
-  --body-font: "Arial", "Helvetica", sans-serif;
-}
-
-/* Universal Selector Reset - Explicitly labeled */
+/* =========================================
+   UNIVERSAL SELECTOR RESET (required first)
+   ========================================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styles */
+/* =========================================
+   CSS VARIABLES
+   ========================================= */
+:root {
+  --primary-color: #2c5530;       /* Deep forest green */
+  --secondary-color: #8b4513;     /* Saddle brown */
+  --accent1-color: #1a5f7f;       /* River blue */
+  --accent2-color: #d4af37;       /* Golden yellow */
+  --neutral-light: #f8f9fa;       /* Off-white */
+  --neutral-dark: #343a40;        /* Dark gray */
+  --heading-font: "Georgia", "Times New Roman", serif;
+  --body-font: "Arial", "Helvetica", sans-serif;
+}
+
+/* =========================================
+   GLOBAL STYLES
+   ========================================= */
 body {
   font-family: var(--body-font);
   color: var(--neutral-dark);
@@ -25,16 +31,17 @@ body {
   line-height: 1.6;
 }
 
-/* Layout container styles */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
-/* Header styles */
+/* =========================================
+   HEADER
+   ========================================= */
 header {
   background-color: var(--primary-color);
-  color: #ffffff; /* FIX: white text instead of gold */
+  color: #ffffff; /* white for contrast compliance */
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -46,7 +53,9 @@ header {
   height: auto;
 }
 
-/* Navigation styles */
+/* =========================================
+   NAVIGATION
+   ========================================= */
 nav ul {
   list-style: none;
   display: flex;
@@ -54,7 +63,7 @@ nav ul {
 }
 
 nav a {
-  color: #ffffff; /* FIX: white text */
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
@@ -66,10 +75,12 @@ nav a:hover {
   background-color: var(--accent1-color);
 }
 
-/* Button styles using secondary color */
+/* =========================================
+   BUTTONS
+   ========================================= */
 button, .button {
   background-color: var(--secondary-color);
-  color: white;
+  color: #ffffff;
   padding: 8px 16px;
   border: none;
   border-radius: 4px;
@@ -79,10 +90,12 @@ button, .button {
 }
 
 button:hover, .button:hover {
-  background-color: #6b3410; /* Darker shade of secondary color */
+  background-color: #6b3410;
 }
 
-/* Heading styles */
+/* =========================================
+   HEADINGS
+   ========================================= */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
@@ -100,13 +113,17 @@ h2 {
   padding-bottom: 8px;
 }
 
-/* Content element styles */
+/* =========================================
+   CONTENT BLOCKS
+   ========================================= */
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
 
-/* Hero section */
+/* =========================================
+   HERO SECTION
+   ========================================= */
 .hero {
   position: relative;
   margin: 20px 0;
@@ -118,7 +135,6 @@ nav, p, section, article {
   height: auto;
 }
 
-/* Hero heading styles */
 .hero h1 {
   position: absolute;
   top: 20px;
@@ -127,13 +143,12 @@ nav, p, section, article {
   text-align: center;
   opacity: 0.9;
   background-color: var(--accent1-color);
-  color: #fff;
+  color: #ffffff;
   margin: 0;
   font-size: 2.2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Hero article styles */
 .hero article {
   position: absolute;
   bottom: 40px;
@@ -141,7 +156,7 @@ nav, p, section, article {
   transform: translateX(-50%);
   width: 90%;
   background-color: rgba(44, 85, 48, 0.85);
-  color: white;
+  color: #ffffff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -157,15 +172,17 @@ nav, p, section, article {
 }
 
 .hero article p {
-  color: white;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   line-height: 1.5;
 }
 
-/* Regular article styles (not in hero) */
+/* =========================================
+   REGULAR ARTICLE
+   ========================================= */
 article {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -180,21 +197,27 @@ article img {
   border-radius: 4px;
 }
 
-/* History section */
+/* =========================================
+   HISTORY SECTION
+   ========================================= */
 .history {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
-/* Secondary text color utility */
+/* =========================================
+   TEXT UTILITIES
+   ========================================= */
 .text-secondary {
   color: var(--secondary-color);
   font-weight: bold;
 }
 
-/* Footer styles */
+/* =========================================
+   FOOTER
+   ========================================= */
 footer {
   background-color: var(--primary-color);
   color: var(--accent2-color);
