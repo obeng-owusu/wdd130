@@ -6,12 +6,12 @@
 
 :root {
     /* Standardized color palette using HSL for better consistency */
-    --primary-color: hsl(135, 32%, 25%);      /* #2c5530 */
-    --secondary-color: hsl(25, 75%, 30%);     /* #8b4513 */
-    --accent1-color: hsl(200, 65%, 30%);      /* #1a5f7f */
-    --accent2-color: hsl(46, 70%, 50%);       /* #d4af37 */
-    --neutral-light: hsl(210, 17%, 98%);      /* #f8f9fa */
-    --neutral-dark: hsl(210, 10%, 23%);       /* #343a40 */
+    --primary-color: hsl(135, 32%, 25%);
+    --secondary-color: hsl(25, 75%, 30%);
+    --accent1-color: hsl(200, 65%, 30%);
+    --accent2-color: hsl(46, 70%, 50%);
+    --neutral-light: hsl(210, 17%, 98%);
+    --neutral-dark: hsl(210, 10%, 23%);
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
     
@@ -53,11 +53,14 @@ header {
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: var(--spacing-lg);
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 .logo img {
     width: 120px;
     height: auto;
+    border: 2px solid var(--black);
+    border-radius: var(--border-radius);
 }
 
 /* Navigation with Flexbox */
@@ -75,26 +78,29 @@ nav a {
     padding: var(--spacing-sm) var(--spacing-md);
     border-radius: 4px;
     transition: var(--transition);
+    border: 1px solid var(--black);
 }
 
 nav a:hover {
     background-color: var(--accent1-color);
+    color: var(--white);
 }
 
-/* Button styles using secondary color */
+/* Button styles using ALL required variables */
 button, .button {
     background-color: var(--secondary-color);
     color: var(--white);
     padding: var(--spacing-sm) var(--spacing-md);
-    border: none;
-    border-radius: 4px;
+    border: 2px solid var(--black);
+    border-radius: var(--border-radius);
     font-family: var(--body-font);
     cursor: pointer;
     transition: var(--transition);
+    font-weight: bold;
 }
 
 button:hover, .button:hover {
-    background-color: hsl(25, 75%, 25%);
+    background-color: var(--accent1-color);
     color: var(--white);
 }
 
@@ -103,6 +109,7 @@ h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     margin-bottom: var(--spacing-md);
+    text-shadow: 1px 1px 2px var(--black);
 }
 
 h1 {
@@ -135,6 +142,7 @@ nav, p, section, article {
     height: 400px;
     object-fit: cover;
     border-radius: var(--border-radius);
+    border: 2px solid var(--black);
 }
 
 .hero h1 {
@@ -147,6 +155,7 @@ nav, p, section, article {
     margin: 0;
     font-size: 2.2rem;
     text-shadow: 2px 2px 4px var(--black);
+    border: 1px solid var(--black);
 }
 
 /* Hero article with float */
@@ -161,6 +170,7 @@ nav, p, section, article {
     padding: var(--spacing-lg);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-lg);
+    border: 2px solid var(--secondary-color);
 }
 
 /* Image with float: right */
@@ -182,6 +192,7 @@ nav, p, section, article {
     margin: 0;
     padding: 0;
     line-height: 1.5;
+    text-shadow: 1px 1px 1px var(--black);
 }
 
 /* Clearfix for floated image */
@@ -198,6 +209,7 @@ nav, p, section, article {
     box-shadow: var(--shadow-sm);
     padding: var(--spacing-xl);
     margin: 40px 0;
+    border: 1px solid var(--black);
 }
 
 .history-content {
@@ -214,10 +226,12 @@ nav, p, section, article {
     object-fit: cover;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-md);
+    border: 2px solid var(--secondary-color);
 }
 
 .history-left, .history-right {
     text-align: justify;
+    color: var(--neutral-dark);
 }
 
 /* Adventure section with Flexbox */
@@ -227,6 +241,7 @@ nav, p, section, article {
     box-shadow: var(--shadow-sm);
     padding: var(--spacing-xl);
     margin: 40px 0;
+    border: 1px solid var(--black);
 }
 
 .adventure-gallery {
@@ -248,28 +263,21 @@ nav, p, section, article {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-md);
     transition: var(--transition);
+    border: 2px solid var(--secondary-color);
 }
 
 /* Hover effects */
 .hero article img:hover,
 .adventure-gallery img:hover {
     transform: scale(1.05);
+    border-color: var(--black);
 }
 
 .adventure-gallery figcaption {
     margin-top: 10px;
     font-weight: bold;
     color: var(--primary-color);
-}
-
-/* Text utility classes */
-.text-secondary {
-    color: var(--secondary-color);
-    font-weight: bold;
-}
-
-.text-black {
-    color: var(--black);
+    text-shadow: 1px 1px 1px var(--black);
 }
 
 /* Footer */
@@ -281,6 +289,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-top: var(--spacing-xl);
+    border-top: 3px solid var(--secondary-color);
 }
 
 .socialmedia {
@@ -297,11 +306,13 @@ footer {
     height: 30px;
     border-radius: 50%;
     transition: var(--transition);
-    border: 1px solid var(--black);
+    border: 2px solid var(--black);
+    background-color: var(--secondary-color);
 }
 
 .socialmedia img:hover {
     transform: scale(1.1);
+    border-color: var(--accent2-color);
 }
 
 /* Responsive Design */
@@ -310,6 +321,7 @@ footer {
         grid-template-columns: 1fr;
         justify-items: center;
         gap: 10px;
+        border-bottom: 2px solid var(--secondary-color);
     }
     
     nav ul {
@@ -340,11 +352,13 @@ footer {
     /* Adjust article layout for mobile */
     .hero article {
         padding: var(--spacing-md);
+        border: 1px solid var(--secondary-color);
     }
     
     footer {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+        border-top: 2px solid var(--secondary-color);
     }
 }
