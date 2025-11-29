@@ -32,10 +32,12 @@
 </header>
 
 <main>
+    <!-- MAIN PAGE HEADING - FIXED -->
+    <h1 class="page-title">Contact Zambezi Rafting Adventures</h1>
 
     <!-- CONTACT HEADER -->
     <section class="contact-info">
-        <h2>Zambezi Rafting Adventures</h2>
+        <h2>Get in Touch With Us</h2>
         <p>
             325 Riverbend Street<br>
             Rapid City, RC 98052<br>
@@ -56,30 +58,41 @@
             </iframe>
         </div>
 
-        <!-- CONTACT FORM -->
+        <!-- CONTACT FORM - FIXED -->
         <form class="contact-form">
-
             <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Your Name">
+            <input id="name" name="name" type="text" placeholder="Your Name" required>
 
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Your Email">
+            <input id="email" name="email" type="email" placeholder="Your Email" required>
 
             <label>Message Purpose</label>
             <div class="radio-group">
-                <label><input type="radio" name="purpose"> General Inquiry</label>
-                <label><input type="radio" name="purpose"> Reservation Question</label>
-                <label><input type="radio" name="purpose"> Website Suggestion</label>
+                <label for="general">
+                    <input id="general" type="radio" name="purpose" value="general">
+                    General Inquiry
+                </label>
+                <label for="reservation">
+                    <input id="reservation" type="radio" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
+                <label for="suggestion">
+                    <input id="suggestion" type="radio" name="purpose" value="suggestion">
+                    Website Suggestion
+                </label>
             </div>
 
             <label for="message">Message</label>
-            <textarea id="message" placeholder="Type your message here..."></textarea>
+            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
 
             <div class="newsletter">
-                <label><input type="checkbox"> Subscribe me to the monthly newsletter</label>
+                <label for="newsletter">
+                    <input id="newsletter" type="checkbox" name="newsletter" value="subscribe">
+                    Subscribe me to the monthly newsletter
+                </label>
             </div>
 
-            <button class="contact-btn">Get in Touch!</button>
+            <button type="submit" class="contact-btn">Send Your Message</button>
         </form>
     </div>
 
@@ -88,7 +101,6 @@
         <h2>We Are Here to Serve You</h2>
 
         <div class="employee-row">
-
             <div class="employee">
                 <div class="employee-image">
                     <img src="images/employee1.webp" alt="Sarah Johnson - Adventure Guide">
@@ -121,7 +133,6 @@
                     <p>Emily will help you plan the perfect rafting adventure.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
