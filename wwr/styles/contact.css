@@ -1,15 +1,15 @@
 /* ===== CSS VARIABLES ===== */
 :root {
-    /* Colors */
+    /* Colors - Using hex for consistency */
     --primary-color: #0d3a5c;
     --secondary-color: #1a6bc5;
     --accent-color: #145299;
-    --text-color: #222;
+    --text-color: #222222;
     --light-text: #5a5a5a;
     --background: #f5f7fa;
-    --white: #fff;
+    --white: #ffffff;
     --gray-light: #f8f8f8;
-    --gray-border: #bbb;
+    --gray-border: #bbbbbb;
     --gray-medium: #e0e0e0;
     
     /* Spacing */
@@ -171,14 +171,11 @@ h3 {
     border: 1px solid var(--gray-border);
 }
 
-.form-group {
-    margin-bottom: 1.125rem;
-}
-
 .contact-form label {
     font-weight: 600;
     color: var(--text-color);
     display: block;
+    margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-xs);
 }
 
@@ -192,6 +189,7 @@ h3 {
     font-size: 1rem;
     transition: border-color var(--transition);
     color: var(--text-color);
+    margin-bottom: var(--spacing-md);
 }
 
 .contact-form input:focus,
@@ -205,6 +203,7 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
 }
 
 .radio-group label,
@@ -214,6 +213,7 @@ h3 {
     gap: var(--spacing-xs);
     font-weight: 500;
     color: var(--text-color);
+    margin-top: 0;
 }
 
 .contact-btn {
@@ -227,7 +227,7 @@ h3 {
     border-radius: var(--border-radius-sm);
     cursor: pointer;
     transition: background-color var(--transition);
-    margin-top: 0.625rem;
+    margin-top: var(--spacing-sm);
 }
 
 .contact-btn:hover {
