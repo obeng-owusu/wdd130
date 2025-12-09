@@ -3,85 +3,522 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about White Water Rafting Adventures, our mission, history, and the exciting experiences we offer. Join us for unforgettable rafting trips!">
+    <meta name="description" content="Learn about Zambezi Rafting Adventures, our mission, history, and the exciting experiences we offer. Join us for unforgettable rafting trips!">
     <meta name="author" content="Joshua Obeng">
     <title>About Us - Zambezi Rafting Adventures</title>
     <link rel="stylesheet" href="styles/rafting.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/rafting-logo.webp" alt="Zambezi Rafting Adventures Logo">
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/rafting-logo.webp" alt="Zambezi Rafting Adventures Logo" width="180" height="60">
+            </div>
+            <nav class="nav-primary">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About Us</a></li>
+                    <li><a href="trips.html" class="nav-link">Trips</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/rafting-background.webp" alt="Exciting rafting adventure">
-            <h1>Zambezi Rafting Adventures</h1>
-            <article>
-                <img src="images/happy-client.jpeg" alt="Happy client enjoying rafting experience">
-                <p>At Zambezi Rafting Adventures, our mission is to provide safe, thrilling, and unforgettable rafting experiences for adventurers of all skill levels. We believe in fostering a deep appreciation for nature while delivering the ultimate adrenaline rush through carefully guided expeditions.</p>
-            </article>
-        </div>
 
-        <section class="history">
-            <h2>History</h2>
-            <div class="history-content">
-                <p class="history-left">Founded in 1995 by outdoor enthusiasts, Rafting Adventures began as a small family operation with just two rafts. Over the past three decades, we've grown into one of the most trusted rafting companies in the region.</p>
-                <img src="images/history-image.webp" alt="Our early days">
-                <p class="history-right">We've served over 50,000 satisfied customers while maintaining our commitment to safety, environmental stewardship, and exceptional customer service.</p>
+        <!-- ==================================================
+             HERO SECTION
+        ================================================== -->
+        <section class="hero about-hero">
+            <div class="hero-overlay">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1>Discover Our Adventure Story</h1>
+                        <p class="hero-subtitle">Three decades of excellence in creating unforgettable rafting experiences</p>
+                        <div class="hero-actions">
+                            <a href="trips.html" class="cta-button primary">
+                                <span>Explore Adventures</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="contact.html" class="cta-button secondary">Contact Our Team</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="adventure">
-            <h2>Adventure Awaits You!</h2>
-            <div class="adventure-gallery">
-                <figure>
-                    <img src="images/rafting1.webp" alt="Rafting through rapids">
-                    <figcaption>Devil's Cataract</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting2.webp" alt="Team navigating river">
-                    <figcaption>Boiling Pot Rapids</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting3.webp" alt="Scenic river view">
-                    <figcaption>Main Falls Run</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting4.webp" alt="Rafting group">
-                    <figcaption>Rainbow's End</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting5.webp" alt="White water adventure">
-                    <figcaption>Victoria Falls Challenge</figcaption>
-                </figure>
+        <!-- ==================================================
+             MISSION & VALUES SECTION
+        ================================================== -->
+        <section class="mission-section">
+            <div class="container">
+                <div class="section-intro">
+                    <span class="section-label">Our Journey</span>
+                    <h2>Passion for Adventure Since 1995</h2>
+                    <p class="section-description">
+                        What began as a small family operation with two rafts has grown into Zambia's premier 
+                        rafting company, trusted by over 50,000 adventurers worldwide.
+                    </p>
+                </div>
+                
+                <div class="values-grid">
+                    <article class="value-card">
+                        <div class="value-icon">⚡</div>
+                        <h3>Thrilling Adventures</h3>
+                        <p>Expertly crafted routes for all skill levels, from gentle family floats to extreme rapids.</p>
+                    </article>
+                    
+                    <article class="value-card">
+                        <div class="value-icon">🛡️</div>
+                        <h3>Safety First</h3>
+                        <p>All guides are certified in wilderness first response and rescue operations.</p>
+                    </article>
+                    
+                    <article class="value-card">
+                        <div class="value-icon">🌿</div>
+                        <h3>Eco-Friendly</h3>
+                        <p>Committed to preserving the natural beauty of the Zambezi River for future generations.</p>
+                    </article>
+                    
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             PROFESSIONAL GALLERY SECTION
+        ================================================== -->
+        <section class="professional-gallery">
+            <div class="container">
+                <div class="gallery-header">
+                    <h2>Our Legendary Rapids</h2>
+                    <p class="gallery-subtitle">Experience the world's most thrilling white water adventures</p>
+                </div>
+                
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All Rapids</button>
+                    <button class="filter-btn" data-filter="beginner">Beginner</button>
+                    <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                    <button class="filter-btn" data-filter="expert">Expert</button>
+                </div>
+                
+                <div class="gallery-grid">
+                    <!-- Gallery Item 1 -->
+                    <article class="gallery-item" data-category="expert">
+                        <figure class="gallery-figure">
+                            <div class="image-container">
+                                <img src="images/rafting1.webp" alt="Devil's Cataract - Intense rapids with dramatic drops" loading="lazy" width="400" height="300">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Devil's Cataract</h4>
+                                        <p>Class IV-V rapids featuring dramatic 20-foot drops</p>
+                                        <span class="rating">★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption class="gallery-caption">
+                                <div class="caption-header">
+                                    <h3>Devil's Cataract</h3>
+                                    <span class="difficulty-badge hard">Expert</span>
+                                </div>
+                                <p class="caption-description">Our most challenging route with continuous Class V rapids</p>
+                                <div class="caption-meta">
+                                    <span class="meta-item">⏱️ 4-5 hours</span>
+                                    <span class="meta-item">👥 4-6 people</span>
+                                    <span class="meta-item">🏆 Advanced</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    
+                    <!-- Gallery Item 2 -->
+                    <article class="gallery-item" data-category="intermediate">
+                        <figure class="gallery-figure">
+                            <div class="image-container">
+                                <img src="images/rafting2.webp" alt="Boiling Pot Rapids - Technical rapids requiring precision" loading="lazy" width="400" height="300">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Boiling Pot Rapids</h4>
+                                        <p>Technical rapids with powerful whirlpools</p>
+                                        <span class="rating">★★★★☆</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption class="gallery-caption">
+                                <div class="caption-header">
+                                    <h3>Boiling Pot Rapids</h3>
+                                    <span class="difficulty-badge medium">Intermediate</span>
+                                </div>
+                                <p class="caption-description">Navigate through challenging whirlpools and strong currents</p>
+                                <div class="caption-meta">
+                                    <span class="meta-item">⏱️ 3-4 hours</span>
+                                    <span class="meta-item">👥 6-8 people</span>
+                                    <span class="meta-item">🎯 Technical</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    
+                    <!-- Gallery Item 3 -->
+                    <article class="gallery-item" data-category="intermediate">
+                        <figure class="gallery-figure">
+                            <div class="image-container">
+                                <img src="images/rafting3.webp" alt="Main Falls Run - Scenic route with moderate challenges" loading="lazy" width="400" height="300">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Main Falls Run</h4>
+                                        <p>Perfect blend of excitement and breathtaking scenery</p>
+                                        <span class="rating">★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption class="gallery-caption">
+                                <div class="caption-header">
+                                    <h3>Main Falls Run</h3>
+                                    <span class="difficulty-badge medium">Intermediate</span>
+                                </div>
+                                <p class="caption-description">Experience the majestic Victoria Falls up close</p>
+                                <div class="caption-meta">
+                                    <span class="meta-item">⏱️ 5-6 hours</span>
+                                    <span class="meta-item">👥 8-10 people</span>
+                                    <span class="meta-item">📸 Scenic</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    
+                    <!-- Gallery Item 4 -->
+                    <article class="gallery-item" data-category="beginner">
+                        <figure class="gallery-figure">
+                            <div class="image-container">
+                                <img src="images/rafting4.webp" alt="Rainbow's End - Family-friendly gentle rapids" loading="lazy" width="400" height="300">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Rainbow's End</h4>
+                                        <p>Family-friendly adventure with stunning waterfalls</p>
+                                        <span class="rating">★★★★☆</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption class="gallery-caption">
+                                <div class="caption-header">
+                                    <h3>Rainbow's End</h3>
+                                    <span class="difficulty-badge easy">Beginner</span>
+                                </div>
+                                <p class="caption-description">Gentle rapids perfect for first-timers and families</p>
+                                <div class="caption-meta">
+                                    <span class="meta-item">⏱️ 2-3 hours</span>
+                                    <span class="meta-item">👥 6-12 people</span>
+                                    <span class="meta-item">👨‍👩‍👧‍👦 Family</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    
+                    <!-- Gallery Item 5 -->
+                    <article class="gallery-item" data-category="expert">
+                        <figure class="gallery-figure">
+                            <div class="image-container">
+                                <img src="images/rafting5.webp" alt="Victoria Falls Challenge - The ultimate rafting adventure" loading="lazy" width="400" height="300">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Victoria Falls Challenge</h4>
+                                        <p>The ultimate test for experienced rafters</p>
+                                        <span class="rating">★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption class="gallery-caption">
+                                <div class="caption-header">
+                                    <h3>Victoria Falls Challenge</h3>
+                                    <span class="difficulty-badge hard">Expert</span>
+                                </div>
+                                <p class="caption-description">Conquer the mighty Zambezi's most powerful rapids</p>
+                                <div class="caption-meta">
+                                    <span class="meta-item">⏱️ 6-8 hours</span>
+                                    <span class="meta-item">👥 4 people</span>
+                                    <span class="meta-item">🔥 Extreme</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    
+                    <!-- Gallery Item 6 -->
+                    <article class="gallery-item" data-category="beginner">
+                        <figure class="gallery-figure">
+                            <div class="image-container">
+                                <img src="images/history-image.webp" alt="Sunset Rapids - Peaceful evening adventure tours" loading="lazy" width="400" height="300">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <h4>Sunset Rapids</h4>
+                                        <p>Evening tours with spectacular African sunsets</p>
+                                        <span class="rating">★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <figcaption class="gallery-caption">
+                                <div class="caption-header">
+                                    <h3>Sunset Rapids</h3>
+                                    <span class="difficulty-badge easy">Beginner</span>
+                                </div>
+                                <p class="caption-description">Peaceful evening adventure with breathtaking sunset views</p>
+                                <div class="caption-meta">
+                                    <span class="meta-item">⏱️ 2 hours</span>
+                                    <span class="meta-item">👥 4-8 people</span>
+                                    <span class="meta-item">🌅 Sunset</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             TEAM SECTION
+        ================================================== -->
+        <section class="team-section">
+            <div class="container">
+                <div class="section-intro">
+                    <span class="section-label">Our Experts</span>
+                    <h2>Meet Your Adventure Guides</h2>
+                    <p class="section-description">
+                        Certified professionals with decades of combined experience ensuring your safety and maximizing your adventure.
+                    </p>
+                </div>
+                
+                <div class="team-grid">
+                    <article class="team-member">
+                        <div class="member-photo">
+                            <img src="images/happy-client.jpeg" alt="Sarah Johnson - Lead Guide" loading="lazy" width="200" height="200">
+                            <div class="member-experience">15+ years</div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Sarah Johnson</h3>
+                            <p class="member-title">Lead Guide & Safety Director</p>
+                            <p class="member-bio">Wilderness first response certified with over 500 successful expeditions led.</p>
+                            <div class="member-skills">
+                                <span class="skill-tag">Rescue Operations</span>
+                                <span class="skill-tag">Route Planning</span>
+                                <span class="skill-tag">Team Leadership</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="team-member">
+                        <div class="member-photo">
+                            <img src="images/happy-client.jpeg" alt="Michael Chen - Senior Guide" loading="lazy" width="200" height="200">
+                            <div class="member-experience">12+ years</div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Michael Chen</h3>
+                            <p class="member-title">Senior Guide</p>
+                            <p class="member-bio">Expert in technical rapids navigation and emergency response procedures.</p>
+                            <div class="member-skills">
+                                <span class="skill-tag">Technical Rapids</span>
+                                <span class="skill-tag">Emergency Response</span>
+                                <span class="skill-tag">Equipment Specialist</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="team-member">
+                        <div class="member-photo">
+                            <img src="images/happy-client.jpeg" alt="Alex Rodriguez - Adventure Guide" loading="lazy" width="200" height="200">
+                            <div class="member-experience">8+ years</div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Alex Rodriguez</h3>
+                            <p class="member-title">Adventure Guide</p>
+                            <p class="member-bio">Specializes in family adventures and photography tours with local wildlife knowledge.</p>
+                            <div class="member-skills">
+                                <span class="skill-tag">Family Adventures</span>
+                                <span class="skill-tag">Photography</span>
+                                <span class="skill-tag">Wildlife Guide</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================
+             CTA SECTION
+        ================================================== -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready for Your Adventure?</h2>
+                    <p class="cta-description">
+                        Join thousands of adventurers who've experienced the thrill of Zambezi Rafting. 
+                        Book your adventure today and create memories that last a lifetime.
+                    </p>
+                    <div class="cta-actions">
+                        <a href="trips.html" class="cta-button primary large">
+                            <span>Book Your Adventure Now</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="contact.html" class="cta-button outline">Speak With Our Team</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>©2025 | Zambezi Adventure | Joshua Obeng</p>
-        <nav class="socialmedia">
-            <a href="https://www.facebook.com/ZambeziRaftingCompany/" target="_blank">
-                <img src="images/fb-icon.jpg" alt="Facebook">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter-logo.jpg" alt="Twitter">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram-icon.jpg" alt="Instagram">
-            </a>
-        </nav>
+    <!-- ==================================================
+         FOOTER
+    ================================================== -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="images/rafting-logo.webp" alt="Zambezi Rafting Adventures" width="200" height="70">
+                        </div>
+                        <p class="footer-description">
+                            Creating unforgettable rafting experiences on the Zambezi River since 1995. 
+                            Safety, adventure, and professional service guaranteed.
+                        </p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/ZambeziRaftingCompany/" target="_blank" aria-label="Facebook" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.213c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links-group">
+                        <h4 class="footer-heading">Quick Navigation</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="trips.html">Adventure Trips</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="safety.html">Safety Guidelines</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-group">
+                        <h4 class="footer-heading">Contact Details</h4>
+                        <ul class="footer-contacts">
+                            <li class="contact-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                                <span>info@zambezirafting.com</span>
+                            </li>
+                            <li class="contact-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                                <span>+260 123 456 789</span>
+                            </li>
+                            <li class="contact-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                                <span>Victoria Falls, Zambia</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-newsletter">
+                        <h4 class="footer-heading">Adventure Updates</h4>
+                        <p>Subscribe for exclusive deals and adventure tips</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="newsletter-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>© 2025 Zambezi Rafting Adventures. All rights reserved. | Designed by Joshua Obeng</p>
+                    <div class="footer-legal">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <span>|</span>
+                        <a href="terms.html">Terms of Service</a>
+                        <span>|</span>
+                        <a href="cookies.html">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- JavaScript for gallery filtering -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Show/hide gallery items based on filter
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 50);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.9)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Add hover effect to gallery items
+            galleryItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
